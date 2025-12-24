@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Justine Grace Pajarillo</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="background-blobs"></div>
+    <script>
+      (function () {
+        if (localStorage.getItem("theme") === "dark") {
+          document.body.classList.add("dark-mode");
+        }
+      })();
+    </script>
+
+    <header>
+      <a href="index.html" class="logo">JGP<span>.</span></a>
+      <div class="header-icons">
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html" class="active">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="files/resume.pdf" target="_blank" id="resume-btn">Resume</a>
+        </nav>
+        <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+        <div id="menu-icon"><i class="fas fa-bars"></i></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="projects">
+        <h2 class="section-title">Latest <span>Projects</span></h2>
+        <div class="projects-container">
+          <div class="project-card reveal">
+            <div class="project-img">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="project-content">
+              <h3>Personal Portfolio</h3>
+              <p>
+                This responsive portfolio website built with HTML, CSS, and
+                JavaScript. Features dark mode, smooth scrolling, and mobile
+                responsiveness to showcase my skills.
+              </p>
+              <a href="index.html" class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-img">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <div class="project-content">
+              <h3>Inventory System</h3>
+              <p>
+                A simple inventory tracking application designed to manage stock
+                levels, track product movements, and generate basic stock
+                reports.
+              </p>
+              <a href="#" class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-img">
+              <i class="fas fa-book-reader"></i>
+            </div>
+            <div class="project-content">
+              <h3>Library System</h3>
+              <p>
+                A basic library management system developed to handle book
+                records, manage member information, and track book borrowing
+                activities.
+              </p>
+              <a href="#" class="project-link"
+                >View Project <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Copyright &copy; 2025 by Justine Grace Pajarillo | All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>

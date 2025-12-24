@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Justine Grace Pajarillo</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="background-blobs"></div>
+    <script>
+      (function () {
+        if (localStorage.getItem("theme") === "dark") {
+          document.body.classList.add("dark-mode");
+        }
+      })();
+    </script>
+
+    <header>
+      <a href="index.html" class="logo">JGP<span>.</span></a>
+      <div class="header-icons">
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="files/resume.pdf" target="_blank" id="resume-btn">Resume</a>
+        </nav>
+        <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+        <div id="menu-icon"><i class="fas fa-bars"></i></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="about">
+        <div class="about-img reveal">
+          <img
+            src="assets/images/profile-2.png"
+            alt="Justine Grace Pajarillo"
+          />
+        </div>
+        <div class="about-content reveal">
+          <h2
+            class="section-title"
+            style="text-align: left; margin-bottom: 1rem"
+          >
+            About <span>Me</span>
+          </h2>
+          <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem">
+            BS Computer Science & Certified Teacher
+          </h3>
+
+          <p>
+            I am <strong>Justine Grace Pajarillo</strong>, a Bachelor of Science
+            in Computer Science graduate from Don Mariano Marcos Memorial State
+            University. I also hold a Graduate Certificate in Teaching. I work
+            independently, am self-motivated, and possess the ability to work
+            under pressure with good decision-making skills.
+          </p>
+
+          <p>
+            My professional experience includes working as a Sales Clerk at
+            Region 1 Ram Cycles Inc., where I enhanced customer service
+            experiences, managed inventory audits, and utilized consultative
+            sales approaches.
+          </p>
+
+          <a href="projects.html" class="btn" style="margin-top: 1rem"
+            >View My Work <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Copyright &copy; 2025 by Justine Grace Pajarillo | All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>

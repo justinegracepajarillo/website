@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justine Grace Pajarillo | Portfolio</title>
+
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="background-blobs"></div>
+    <script>
+      (function () {
+        if (localStorage.getItem("theme") === "dark") {
+          document.body.classList.add("dark-mode");
+        }
+      })();
+    </script>
+
+    <header>
+      <a href="index.html" class="logo">JGP<span>.</span></a>
+      <div class="header-icons">
+        <nav class="navbar">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+          <a href="files/resume.pdf" target="_blank" id="resume-btn">Resume</a>
+        </nav>
+        <div id="theme-toggle"><i class="fas fa-moon"></i></div>
+        <div id="menu-icon"><i class="fas fa-bars"></i></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="home">
+        <div class="home-content reveal">
+          <h3>Hello, It's Me</h3>
+          <h1>Justine Grace Pajarillo</h1>
+          <h3>
+            <span class="highlight">BSCS Graduate</span> & Sales Professional
+          </h3>
+          <p>
+            Multi-talented professional focused on being productive, innovative,
+            and self-driven. Enthusiastic about resolving issues and providing
+            process efficiencies.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap">
+            <a href="files/resume.pdf" target="_blank" class="btn"
+              >Download Resume <i class="fas fa-download"></i
+            ></a>
+            <a href="contact.html" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="home-img reveal">
+          <img src="assets/images/profile.png" alt="Justine Grace Pajarillo" />
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>
